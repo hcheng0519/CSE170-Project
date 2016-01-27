@@ -210,6 +210,28 @@ hr.small {
     opacity: 0.8;
 }
 
+.portfolio-item .imgDescription {
+    position: absolute;
+    display: none;
+}
+
+.portfolio-item:hover .imgDescription{
+    display: block;
+}
+
+/*.item1 {
+  border: 1px solid #ccc;
+  display: none;
+  font-size: 10px;
+  margin-top: 10px;
+  padding: 5px;
+  text-transform: uppercase;
+}
+
+.item1:hover {
+  display: block;
+}*/
+
 /* Call to Action */
 
 .call-to-action {
@@ -222,12 +244,9 @@ hr.small {
 
 /* Map */
 .sign_up{
-    margin-top: 10px;
     margin-bottom: 10px;
-    margin-right: 10px;
+    margin-right: 20px;
     margin-left: 10px;
-    /*display: inline-block;*/
-    float: left;
     border: 1px dotted gray;
     padding: 10px;
 }
@@ -242,6 +261,7 @@ hr.small {
 }
 
 .map_only {
+    margin-left: 10px;
      border: 1px dotted gray;
      padding: 20px;
 }
