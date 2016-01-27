@@ -222,6 +222,10 @@ hr.small {
 
 /* Map */
 
+.scrolloff{
+    pointer-events: none;
+}
+
 .map {
     height: 500px;
 }
