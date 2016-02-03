@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>WishTrip</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
+
+    <!-- Added CSS files -->
+    <link rel="stylesheet" type="text/css" href="css/isotope.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="css/da-slider.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+<!-- Navigation -->
+<a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+<nav id="sidebar-wrapper">
+    <ul class="sidebar-nav">
+        <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+        <li class="sidebar-brand">
+            <a href="#top"  onclick = $("#menu-close").click(); >Wish Trip</a>
+        </li>
+        <li>
+            <a href="index.html" onclick = $("#menu-close").click(); >Home</a>
+        </li>
+        <li>
+            <a href="index.html#about" onclick = $("#menu-close").click(); >About</a>
+        </li>
+        <li>
+            <a href="#services" onclick = $("#menu-close").click(); >Services</a>
+        </li>
+        <li>
+            <a href="#portfolio" onclick = $("#menu-close").click(); >Portfolio</a>
+        </li>
+        <li>
+            <a href="#contact" onclick = $("#menu-close").click(); >Contact</a>
+        </li>
+    </ul>
+</nav>
+
+
+<section id="introText">
+        <div class="container">
+            <div class="text-center">
+            <h1>I create beautiful responsive websites, Yes I am a UX geek</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse interdum erat et neque tincidunt volutpat. Cras eget augue id dui varius pretium. Cras posuere dolor risus. Pellentesque elementum ultricies quam, sit amet rhoncus nisl viverra in. Cras imperdiet nisi a euismod molestie. Ut a metus arcu. Pellentesque feugiat dictum erat. Nulla vehicula condimentum purus, quis imperdiet nisl ultricies eleifend. Nulla quis rhoncus risus. Ut vel vehicula urna.</p>
+            </div>
+        </div>
+
+    </section>
+    <!--About-->
+    <section id="aboutUs" class="secPad">
+        <div class="container">
+            <div class="heading text-center">
+                <!-- Heading -->
+                <h2>I am Sam, a UI Designer & developer</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            </div>
+            <div class="row">
+                <!-- item -->
+                <div class="col-md-4 text-center tileBox">
+                   <div class="txtHead"> <i class="fa fa-desktop"></i>
+                    <h3>Responsive <span class="id-color">Design</span></h3></div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse interdum erat et neque tincidunt volutpat. Cras eget augue id dui varius pretium.</p>
+                </div>
+                <!-- end: -->
+
+                <!-- item -->
+                <div class="col-md-4 text-center tileBox">
+                    <div class="txtHead"><i class="fa fa-css3"></i>
+                    <h3>HTML5/CSS3 <span class="id-color">Dev</span></h3></div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse interdum erat et neque tincidunt volutpat. Cras eget augue id dui varius pretium.</p>
+                </div>
+                <!-- end: -->
+
+                <!-- item -->
+                <div class="col-md-4 text-center tileBox">
+                    <div class="txtHead"><i class="fa fa-lightbulb-o"></i>
+                    <h3>JavaScript <span class="id-color">jQuery</span></h3></div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse interdum erat et neque tincidunt volutpat. Cras eget augue id dui varius pretium.</p>
+                </div>
+                <!-- end: -->
+            </div>
+        </div>
+    </section>
+    <!--Quote-->
+    <section id="quote" class="bg-parlex">
+        <div class="parlex-back">
+            <div class="container secPad text-center">
+                <h2>If I asked people what they wanted, they would have said ‘Faster Horses’.</h2><h3>-Henry Ford</h3>
+            </div>
+            <!--/.container-->
+        </div>
+    </section>
+
+
+
+<!--Portfolio-->
+    <section id="portfolio" class="page-section section appear clearfix secPad">
+        <div class="container">
+
+            <div class="heading text-center">
+                <!-- Heading -->
+                <h2>Portfolio</h2>
+                <p>At lorem Ipsum available, but the majority have suffered alteration in some form by injected humour.</p>
+            </div>
+
+            <div class="row">
+                <nav id="filter" class="col-md-12 text-center">
+                    <ul>
+                        <li><a href="#" class="current btn-theme btn-small" data-filter="*">All</a></li>
+                        <li><a href="#" class="btn-theme btn-small" data-filter=".webdesign">Web Design</a></li>
+                        <li><a href="#" class="btn-theme btn-small" data-filter=".photography">Photography</a></li>
+                        <li><a href="#" class="btn-theme btn-small" data-filter=".print">Print</a></li>
+                    </ul>
+                </nav>
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="portfolio-items isotopeWrapper clearfix" id="3">
+
+                            <article class="col-sm-4 isotopeItem webdesign">
+                                <div class="portfolio-item">
+                                    <img src="img/portfolio/img1.jpg" alt="" />
+                                    <div class="portfolio-desc align-center">
+                                        <div class="folio-info">
+                                            <a href="img/portfolio/img1.jpg" class="fancybox">
+                                                <h5>Project Name</h5>
+                                                <i class="fa fa-arrows-alt fa-2x"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="col-sm-4 isotopeItem photography">
+                                <div class="portfolio-item">
+                                    <img src="img/portfolio/img2.jpg" alt="" />
+                                    <div class="portfolio-desc align-center">
+                                        <div class="folio-info">
+                                            <a href="img/portfolio/img2.jpg" class="fancybox">
+                                                <h5>Project Name</h5>
+                                                <i class="fa fa-arrows-alt fa-2x"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+
+                            <article class="col-sm-4 isotopeItem photography">
+                                <div class="portfolio-item">
+                                    <img src="img/portfolio/img3.jpg" alt="" />
+                                    <div class="portfolio-desc align-center">
+                                        <div class="folio-info">
+                                            <a href="img/portfolio/img3.jpg" class="fancybox">
+                                                <h5>Project Name</h5>
+                                                <i class="fa fa-arrows-alt fa-2x"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="col-sm-4 isotopeItem print">
+                                <div class="portfolio-item">
+                                    <img src="img/portfolio/img4.jpg" alt="" />
+                                    <div class="portfolio-desc align-center">
+                                        <div class="folio-info">
+                                            <a href="img/portfolio/img4.jpg" class="fancybox">
+                                                <h5>Project Name</h5>
+                                                <i class="fa fa-arrows-alt fa-2x"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="col-sm-4 isotopeItem photography">
+                                <div class="portfolio-item">
+                                    <img src="img/portfolio/img5.jpg" alt="" />
+                                    <div class="portfolio-desc align-center">
+                                        <div class="folio-info">
+                                            <a href="img/portfolio/img5.jpg" class="fancybox">
+                                                <h5>Project Name</h5>
+                                                <i class="fa fa-arrows-alt fa-2x"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="col-sm-4 isotopeItem webdesign">
+                                <div class="portfolio-item">
+                                    <img src="img/portfolio/img6.jpg" alt="" />
+                                    <div class="portfolio-desc align-center">
+                                        <div class="folio-info">
+                                            <a href="img/portfolio/img6.jpg" class="fancybox">
+                                                <h5>Project Name</h5>
+                                                <i class="fa fa-arrows-alt fa-2x"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="col-sm-4 isotopeItem print">
+                                <div class="portfolio-item">
+                                    <img src="img/portfolio/img7.jpg" alt="" />
+                                    <div class="portfolio-desc align-center">
+                                        <div class="folio-info">
+                                            <a href="img/portfolio/img7.jpg" class="fancybox">
+                                                <h5>Project Name</h5>
+                                                <i class="fa fa-arrows-alt fa-2x"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="col-sm-4 isotopeItem photography">
+                                <div class="portfolio-item">
+                                    <img src="img/portfolio/img8.jpg" alt="" />
+                                    <div class="portfolio-desc align-center">
+                                        <div class="folio-info">
+                                            <a href="img/portfolio/img8.jpg" class="fancybox">
+                                                <h5>Project Name</h5>
+                                                <i class="fa fa-arrows-alt fa-2x"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="col-sm-4 isotopeItem print">
+                                <div class="portfolio-item">
+                                    <img src="img/portfolio/img9.jpg" alt="" />
+                                    <div class="portfolio-desc align-center">
+                                        <div class="folio-info">
+                                            <a href="img/portfolio/img9.jpg" class="fancybox">
+                                                <h5>Project Name</h5>
+                                                <i class="fa fa-arrows-alt fa-2x"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+ <!-- jQuery -->
+<script src="js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script>
+// Closes the sidebar menu
+$("#menu-close").click(function(e) {
+    e.preventDefault();
+    $("#sidebar-wrapper").toggleClass("active");
+});
+
+// Opens the sidebar menu
+$("#menu-toggle").click(function(e) {
+    e.preventDefault();
+    $("#sidebar-wrapper").toggleClass("active");
+});
+
+// Scrolls to the selected menu item on the page
+$(function() {
+    $('a[href*=#]:not([href=#])').click(function() {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            if (target.length) {
+                $('html,body').animate({
+                    scrollTop: target.offset().top
+                }, 1000);
+                return false;
+            }
+        }
+    });
+});
+</script>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://code.jquery.com/jquery.js"></script>
+<!-- Include all compiled plugins (blelow), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
