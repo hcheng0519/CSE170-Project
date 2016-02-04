@@ -43,7 +43,7 @@
     <ul class="sidebar-nav">
         <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
         <li class="sidebar-brand">
-            <a href="#top"  onclick = $("#menu-close").click(); >Wish Trip</a>
+            <a href="index.html#top"  onclick = $("#menu-close").click(); >Wish Trip</a>
         </li>
         <li>
             <a href="index.html" onclick = $("#menu-close").click(); >Home</a>
@@ -52,13 +52,13 @@
             <a href="index.html#about" onclick = $("#menu-close").click(); >About</a>
         </li>
         <li>
-            <a href="#services" onclick = $("#menu-close").click(); >Services</a>
+            <a href="index.html#services" onclick = $("#menu-close").click(); >Services</a>
         </li>
         <li>
-            <a href="#portfolio" onclick = $("#menu-close").click(); >Portfolio</a>
+            <a href="index.html#portfolio" onclick = $("#menu-close").click(); >Portfolio</a>
         </li>
         <li>
-            <a href="#contact" onclick = $("#menu-close").click(); >Contact</a>
+            <a href="index.html#contact" onclick = $("#menu-close").click(); >Contact</a>
         </li>
     </ul>
 </nav>
@@ -66,15 +66,15 @@
 
 <section id="profile_pic">
     <div class="pic_container">
-        <img id="pro_image" class="img-circle" src="img/up.jpg" >
+        <img id="pro_image" class="pro_image img-circle" src="img/up.jpg" >
     </div>
 </section>
 
 <section id="introText">
         <div class="container">
             <div class="text-center">
-            <h1>I create beautiful responsive websites, Yes I am a UX geek</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse interdum erat et neque tincidunt volutpat. Cras eget augue id dui varius pretium. Cras posuere dolor risus. Pellentesque elementum ultricies quam, sit amet rhoncus nisl viverra in. Cras imperdiet nisi a euismod molestie. Ut a metus arcu. Pellentesque feugiat dictum erat. Nulla vehicula condimentum purus, quis imperdiet nisl ultricies eleifend. Nulla quis rhoncus risus. Ut vel vehicula urna.</p>
+            <h2>Carl Fredricksen</h2>
+              <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse interdum erat et neque tincidunt volutpat. Cras eget augue id dui varius pretium. Cras posuere dolor risus. Pellentesque elementum ultricies quam, sit amet rhoncus nisl viverra in. Cras imperdiet nisi a euismod molestie. Ut a metus arcu. Pellentesque feugiat dictum erat. Nulla vehicula condimentum purus, quis imperdiet nisl ultricies eleifend. Nulla quis rhoncus risus. Ut vel vehicula urna.</p> -->
             </div>
         </div>
 
@@ -82,47 +82,59 @@
     <!--About-->
     <section id="aboutUs" class="secPad">
         <div class="container">
-            <div class="heading text-center">
+            <!-- <div class="heading text-center"> -->
                 <!-- Heading -->
-                <h2>I am Sam, a UI Designer & developer</h2>
+                <!-- <h2>I am Sam, a UI Designer & developer</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-            </div>
+            </div> -->
             <div class="row">
                 <!-- item -->
                 <div class="col-md-4 text-center tileBox">
-                   <div class="txtHead"> <i class="fa fa-desktop"></i>
-                    <h3>Responsive <span class="id-color">Design</span></h3></div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse interdum erat et neque tincidunt volutpat. Cras eget augue id dui varius pretium.</p>
+                    <a href="traveltrips.html" class="btn btn-info" role="button">
+                        <button type="button" class="btn btn-default">
+                            <div class="txtHead"><i class="fa fa-globe"></i>
+                            <h3>Asia <span class="id-color">Trip</span></h3></div>
+                            <p>See my travel destinations!</p>
+                        </button>
+                    </a>
                 </div>
                 <!-- end: -->
 
                 <!-- item -->
                 <div class="col-md-4 text-center tileBox">
-                    <div class="txtHead"><i class="fa fa-css3"></i>
-                    <h3>HTML5/CSS3 <span class="id-color">Dev</span></h3></div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse interdum erat et neque tincidunt volutpat. Cras eget augue id dui varius pretium.</p>
+                    <a href="traveltrips.html" class="btn btn-info" role="button">
+                        <button type="button" class="btn btn-default">
+                            <div class="txtHead"><i class="fa fa-cutlery"></i>
+                            <h3>Convoy <span class="id-color">Eats</span></h3></div>
+                            <p>My list of go to food~</p>
+                        </button>
+                    </a>
                 </div>
                 <!-- end: -->
 
                 <!-- item -->
                 <div class="col-md-4 text-center tileBox">
-                    <div class="txtHead"><i class="fa fa-lightbulb-o"></i>
-                    <h3>JavaScript <span class="id-color">jQuery</span></h3></div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse interdum erat et neque tincidunt volutpat. Cras eget augue id dui varius pretium.</p>
+                    <a href="traveltrips.html" class="btn btn-info" role="button">
+                        <button type="button" class="btn btn-default">
+                            <div class="txtHead"><i class="fa fa-anchor"></i>
+                            <h3>San Diego <span class="id-color">Seaport Village</span></h3></div>
+                            <p>Stores and museums at Seaport!</p>
+                        </button>
+                    </a>
                 </div>
                 <!-- end: -->
             </div>
         </div>
     </section>
     <!--Quote-->
-    <section id="quote" class="bg-parlex">
+    <!-- <section id="quote" class="bg-parlex">
         <div class="parlex-back">
             <div class="container secPad text-center">
                 <h2>If I asked people what they wanted, they would have said ‘Faster Horses’.</h2><h3>-Henry Ford</h3>
             </div>
-            <!--/.container-->
+            
         </div>
-    </section>
+    </section> -->
 
 
 
@@ -132,17 +144,17 @@
 
             <div class="heading text-center">
                 <!-- Heading -->
-                <h2>Portfolio</h2>
-                <p>At lorem Ipsum available, but the majority have suffered alteration in some form by injected humour.</p>
+                <h2>Adventure Awaits</h2>
+                <p>You can see more of my adventures below!</p>
             </div>
 
             <div class="row">
                 <nav id="filter" class="col-md-12 text-center">
                     <ul>
-                        <li><a href="#" class="current btn-theme btn-small" data-filter="*">All</a></li>
-                        <li><a href="#" class="btn-theme btn-small" data-filter=".webdesign">Web Design</a></li>
-                        <li><a href="#" class="btn-theme btn-small" data-filter=".photography">Photography</a></li>
-                        <li><a href="#" class="btn-theme btn-small" data-filter=".print">Print</a></li>
+                        <li><a href="traveltrips.html" class="current btn-theme btn-small" data-filter="*">All Images</a></li>
+                        <li><a href="traveltrips.html" class="btn-theme btn-small" data-filter=".webdesign">Travel Diary</a></li>
+                        <li><a href="traveltrips.html" class="btn-theme btn-small" data-filter=".photography">Future Travels</a></li>
+                        <li><a href="traveltrips.html" class="btn-theme btn-small" data-filter=".print">Misc</a></li>
                     </ul>
                 </nav>
                 <div class="col-md-12">
