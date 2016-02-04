@@ -68,11 +68,14 @@
             <hr>
 
             <div class="searchBar">
-                <form id="searchDestination" role="form" method="get">
-                <h4>Search a Destination</h4>
+                <form id="searchDestination" role="form" method="get" action="/search">
+                <h4>Look up a destination and get inspiration for your own trip!</h4>
                 <div class="form-group">
                     <input type="text" class="form-control" id="destination" placeholder="Destination" name="destination">
+                    <a href="search_results.html">
                 </div>
+                <input type="search" id="submitBtn" class="btn btn-default" value="search">
+                </input>
                 </form>
             </div>
 
