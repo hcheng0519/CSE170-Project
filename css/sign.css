@@ -41,7 +41,7 @@ body{
 .main h2,.main h3{
   font-size: 1em;
   text-align: center;
-  color:#fff;
+  color:#000000;
   padding:1em 0;
   font-family: 'Oxygen', sans-serif;
 }
@@ -105,7 +105,7 @@ ul.twitter:hover{
   background: #71B8ED;
 }
 span.term a{
-  color: #1888A8;
+  color: #fff;
   font-weight: bold;
 }
 span.term a:hover{
@@ -185,7 +185,7 @@ input[type=submit] {
    background:#07793D;
    border:1px solid #07793D;
 }
-/**start-copy-right**/
+/**start-copy-right
 .copy-right {
   text-align: center;
   margin: 2em 0;
@@ -207,7 +207,8 @@ input[type=submit] {
 }
 .copy-right a:hover{
   color:#fff;
-}
+}*/
+
 .col_1_of_2:first-child {
   margin-left: 0;
 }
