@@ -310,7 +310,7 @@ hr.small {
     margin: 10px;
 }
 
-/* Map */
+/* Map 
 .sign_up{
     margin-bottom: 10px;
     margin-right: 20px;
@@ -338,6 +338,14 @@ hr.small {
     .map {
         height: 75%;
     }
+}*/
+
+#sign {
+    margin: 0 auto;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    position: absolute;
 }
 
 /* Footer */
