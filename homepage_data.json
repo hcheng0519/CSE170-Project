@@ -1,0 +1,31 @@
+{
+	"services":[
+		{ 	"about": "Make your travel plans",
+		    "description": "Get information all about the place you want to travel to"
+		},
+		{ 	"about": "Share with your friends",
+			"description": "Let your friends see what you have done on your trip"
+		},
+		{ 	"about": "View other travel diaries",
+			"description": "Get inspiration from other people for your own trip"
+		},
+		{ 	"about": "Organize your trip",
+			"description": "Plan, share, and edit your travel itenary all in one place"
+		}   	
+	],
+
+	"feature": [
+		{ 	"name": "Helen Cheng",
+		    "description": "Exploring San Francisco!"
+		},
+		{ 	"name": "Steven Duong",
+		    "description": "My Month in Canada"
+		},	
+		{ 	"name": "Anjelica Thang",
+		    "description": "A Day in Paris~"
+		},
+		{ 	"name": "Carl Fredricksen",
+		    "description": "Adventure is out there"
+		}
+	]
+}
