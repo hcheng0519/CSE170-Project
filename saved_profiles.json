@@ -1,0 +1,40 @@
+{
+	"saved_profiles": [
+		{
+			"name": "Anjelica Thang",
+			"imgPath": "img/profile_pic/girl1.jpg"
+		},
+		{
+			"name": "Steven Duong",
+			"imgPath": "img/profile_pic/girl1.jpg"
+		},
+		{
+			"name": "Helen Cheng",
+			"imgPath": "img/profile_pic/girl1.jpg"
+		},
+		{
+			"name": "Joel Krejmas",
+			"imgPath": "img/profile_pic/girl1.jpg"
+		},
+		{
+			"name": "Harry Potter",
+			"imgPath": "img/profile_pic/girl1.jpg"
+		},
+		{
+			"name": "Ron Weasley",
+			"imgPath": "img/profile_pic/girl1.jpg"
+		},
+		{
+			"name": "Hermione Granger",
+			"imgPath": "img/profile_pic/girl1.jpg"
+		},
+		{
+			"name": "Severus Snape",
+			"imgPath": "img/profile_pic/girl1.jpg"
+		},
+		{
+			"name": "Albus Dumbledore",
+			"imgPath": "img/profile_pic/girl1.jpg"
+		}
+	]
+}
