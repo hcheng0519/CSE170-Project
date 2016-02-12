@@ -11,10 +11,11 @@ var handlebars = require('express3-handlebars');
 
 var index_proj = require('./routes/index_proj');
 var feature_one = require('./routes/feature_one');
-var signup = require('./routes/signup');
-//var saved_profiles = require('./routes/saved_profiles');
-//var index_proj2 = require('./routes/index_proj2');
-//var project = require('./routes/project');
+//var signup = require('./routes/signup');
+var saved_profiles = require('./routes/saved_profiles');
+var saved_trips = require('./routes/saved_trips');
+//var edit_tripdiary = require('./routes/edit_tripdiary');
+
 // Example route
 // var user = require('./routes/user');
 //var homepage_data = require('./homepage_data.json');
@@ -45,8 +46,10 @@ if ('development' == app.get('env')) {
 // Add routes here
 app.get('/', index_proj.viewData);
 app.get('/feature_one', feature_one.main);
-app.get('/signup', signup.main);
-//app.get('/saved_profiles', saved_profiles.main)
+//app.get('/signup', signup.main);
+app.get('/saved_profiles', saved_profiles.main);
+app.get('/saved_trips', saved_trips.main);
+//app.get('/edit_tripdiary', edit_tripdiary.main);
 //app.get('/project/:id', project.projectInfo);
 // Example route
 // app.get('/users', user.list);
