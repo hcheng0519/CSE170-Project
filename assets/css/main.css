@@ -2523,9 +2523,21 @@
 				#header nav a span {
 					display: none;
 				}
+
+	#moveit {
+		position: relative; /*relative;*/
+		color: #fff;
+		text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.25);
+		text-align: center;
+		margin: 0;
+		padding: 14em 0 14em 0;
+		cursor: default;
+		display: inline-block;
+		padding: 0 0 4.5em 0;
+	}
 /* Header *************************************************************
 
-	#header {
+	#moveit {
 		position: relative;
 		color: #fff;
 		text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.25);
@@ -2533,53 +2545,9 @@
 		margin: 0;
 		padding: 14em 0 14em 0;
 		cursor: default;
+		display: inline-block;
+		padding: 0 0 4.5em 0;
 	}
-
-		#header header {
-			display: inline-block;
-			padding: 0 0 4.5em 0;
-		}
-
-			#header header h1 {
-				font-weight: 600;
-				font-size: 2em;
-				letter-spacing: 10px;
-			}
-
-			#header header p {
-				border-top: solid 1px rgba(255, 255, 255, 0.5);
-				color: rgba(255, 255, 255, 0.75);
-				text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.1875);
-				font-size: 1em;
-				text-transform: uppercase;
-				letter-spacing: 3px;
-				padding: 0;
-				margin-top: 0.35em;
-			}
-
-				#header header p:before {
-					content: '';
-					display: block;
-					border-top: solid 1px rgba(255, 255, 255, 0.5);
-					margin: 4px 0 0.8em 0;
-				}
-
-		#header footer {
-			position: absolute;
-			bottom: 9em;
-			margin: 0;
-			width: 100%;
-		}
-
-			#header footer:after {
-				content: '';
-				display: block;
-				position: absolute;
-				bottom: -9em;
-				left: 50%;
-				height: 9em;
-				border-left: solid 1px #fff;
-			}
 
 			#header footer:before {
 				content: '';
@@ -2594,9 +2562,6 @@
 				background: url("images/arrow.svg") no-repeat;
 			}
 ******************************************************************/
-.moveit {
-	top: 1150px;
-}
 /* Banner */
 
 	#banner {
