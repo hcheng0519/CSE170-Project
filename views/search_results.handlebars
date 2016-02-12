@@ -39,30 +39,7 @@
 <body>
 
     <!-- Navigation -->
-<a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
-<nav id="sidebar-wrapper">
-    <ul class="sidebar-nav">
-        <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
-        <li class="sidebar-brand">
-            <a href="index.html#top"  onclick = $("#menu-close").click(); >Wish Trip</a>
-        </li>
-        <li>
-            <a href="index.html" onclick = $("#menu-close").click(); >Home</a>
-        </li>
-        <li>
-            <a href="index.html#about" onclick = $("#menu-close").click(); >About</a>
-        </li>
-        <li>
-            <a href="index.html#services" onclick = $("#menu-close").click(); >Services</a>
-        </li>
-        <li>
-            <a href="index.html#portfolio" onclick = $("#menu-close").click(); >Portfolio</a>
-        </li>
-        <li>
-            <a href="index.html#contact" onclick = $("#menu-close").click(); >Contact</a>
-        </li>
-    </ul>
-</nav>
+    {{> menu_bar}}
 
     <!-- Page Content -->
     <div class="container">
@@ -79,25 +56,27 @@
         <!-- /.row -->
 
         <!-- Project One -->
+        {{#each search_results}}
         <div class="row">
             <div class="col-md-7">
                 <a href="#">
-                    <img class="img-responsive" src="https://i.ytimg.com/vi/O4W4X_UBRkg/maxresdefault.jpg" alt="">
+                    <img class="img-responsive" src="{{img}}" alt="">
                 </a>
             </div>
             <div class="col-md-5">
-                <h3>Brittany's Paris Trip</h3>
-                <h4>France</h4>
-                <p>Lingering over pain au chocolat in a sidewalk café, relaxing after a day of strolling along the Seine and marveling at icons like the Eiffel Tower and the Arc de Triomphe… the perfect Paris experience combines leisure and liveliness with enough time to savor both an exquisite meal and exhibits at the Louvre. Awaken your spirit at Notre Dame, bargain hunt at the Marché aux Puces de Montreuil or for goodies at the Marché Biologique Raspail, then cap it all off with a risqué show at the Moulin Rouge.</p>
-                <a class="btn btn-primary" href="traveltrips.html">View Trip <span class="glyphicon glyphicon-chevron-right"></span></a>
+                <h3>{{name}}</h3>
+                <h4>{{place}}</h4>
+                <p>{{description}}</p>
+                <a class="btn btn-primary" href="/traveltrips">View Trip <span class="glyphicon glyphicon-chevron-right"></span></a>
             </div>
         </div>
         <!-- /.row -->
 
         <hr>
+        {{/each}}
 
         <!-- Project Two -->
-        <div class="row">
+        <!-- <div class="row">
             <div class="col-md-7">
                 <a href="#">
                     <img class="img-responsive" src="https://pixabay.com/static/uploads/photo/2015/08/24/15/00/wine-905098_960_720.jpg" alt="">
@@ -109,13 +88,14 @@
                 <p>I went solo to a wine, cheese, and charcuterie lunch and absolutely loved it. The wines were very nice, and Neil, our sommelier was so knowledgeable and fun. It was a terrific small group of 5, and we were in a great wine library at the back. If I could transport this room to my home, I'd be thrilled. Highly recommended.</p>
                 <a class="btn btn-primary" href="traveltrips.html">View Trip <span class="glyphicon glyphicon-chevron-right"></span></a>
             </div>
-        </div>
+        </div> -->
         <!-- /.row -->
 
-        <hr>
+        <!-- <hr> -->
+
 
         <!-- Project Three -->
-        <div class="row">
+        <!-- <div class="row">
             <div class="col-md-7">
                 <a href="#">
                     <img class="img-responsive" src="https://c1.staticflickr.com/1/670/20365753384_c48a64e7df_b.jpg" alt="">
@@ -127,13 +107,13 @@
                 <p>The summer "beach" with sand and children's entertainments was as amazing transformation of the street along the bank of the Seine! What a wonderful idea for sunny, warm days of July. I had never seen pictures of it, nor heard that it was done by the city of Paris for the people.</p>
                 <a class="btn btn-primary" href="traveltrips.html">View Trip <span class="glyphicon glyphicon-chevron-right"></span></a>
             </div>
-        </div>
+        </div> -->
         <!-- /.row -->
 
-        <hr>
+     <!--    <hr> -->
 
         <!-- Project Four -->
-        <div class="row">
+        <!-- <div class="row">
 
             <div class="col-md-7">
                 <a href="#">
@@ -146,13 +126,13 @@
                 <p>My wife and I spent a half-day at the Louvre during a 3-day Paris visit. Of course it's a "must" destination and the collection of art and history is incomparable. My only suggestions and observations to first-time visitors are that Paris was unseasonably warm during our May visit, and the Louvre was at times hot and stuffy. But maybe (maybe!) we're simply spoiled Americans, used to our air conditioning.</p>
                 <a class="btn btn-primary" href="traveltrips.html">View Trip <span class="glyphicon glyphicon-chevron-right"></span></a>
             </div>
-        </div>
+        </div> -->
         <!-- /.row -->
 
-        <hr>
+       <!--  <hr> -->
 
         <!-- Project Five -->
-        <div class="row">
+        <!-- <div class="row">
             <div class="col-md-7">
                 <a href="#">
                     <img class="img-responsive" src="https://pixabay.com/static/uploads/photo/2014/03/28/19/54/love-300292_960_720.jpg" alt="">
@@ -164,10 +144,10 @@
                 <p>Who could ask for a better honeymoon destination than Paris, "The City of Love?" We happen to agree with Audrey Hepburn when she said, "Paris is always a good idea." Its iconic monuments like the Eiffel Tower, museums like the Louvre and landmarks like the Notre Dame Cathedral are certain to dazzle visitors. However, even more spectacular than the sights is Paris' rich culture found in its charming boulevards, cozy cafes and bustling bistros. This grand city boasts an indescribable "je ne sais quoi" that is sure to inspire an incredibly romantic honeymoon.</p>
                 <a class="btn btn-primary" href="traveltrips.html">View Trip <span class="glyphicon glyphicon-chevron-right"></span></a>
             </div>
-        </div>
+        </div> -->
         <!-- /.row -->
 
-        <hr>
+    <!--     <hr> -->
 
         <!-- Pagination -->
         <div class="row text-center">

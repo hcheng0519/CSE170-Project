@@ -1,5 +1,7 @@
-document.getElementById("create").addEventListener("click", toProfile);
+exports.toProfile= function(req, res){
+	window.location.assign('profile_landing')
+}
 
-function toProfile() {
-	window.location.assign("profile_landing.html");
+exports.main = function(req, res){
+  	res.render('signup')
 }
