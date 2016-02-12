@@ -17,7 +17,7 @@ var pro_land = require('./routes/pro_land');
 var search_results = require('./routes/search_results');
 var saved_profiles = require('./routes/saved_profiles');
 var saved_trips = require('./routes/saved_trips');
-//var edit_tripdiary = require('./routes/edit_tripdiary');
+var edit_tripdiary = require('./routes/edit_tripdiary');
 
 
 // Example route
@@ -57,7 +57,7 @@ app.get('/pro_land', pro_land.main)
 
 app.get('/saved_profiles', saved_profiles.main);
 app.get('/saved_trips', saved_trips.main);
-//app.get('/edit_tripdiary', edit_tripdiary.main);
+app.get('/edit_tripdiary', edit_tripdiary.main);
 
 //app.get('/project/:id', project.projectInfo);
 // Example route
