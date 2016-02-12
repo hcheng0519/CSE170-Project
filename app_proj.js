@@ -74,6 +74,6 @@ app_proj.get('/edit_tripdiary', edit_tripdiary.main);
 // Example route
 // app_proj.get('/users', user.list);
 
-http.createapp_proj(app_proj).listen(app_proj.get('port'), function(){
+http.createServer(app_proj).listen(app_proj.get('port'), function(){
   console.log('Express app_proj listening on port ' + app_proj.get('port'));
 });
