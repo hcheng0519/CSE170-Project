@@ -54,7 +54,7 @@ if ('development' == app.get('env')) {
 
 // Add routes here
 app.get('/', index_proj.viewData);
-app.get('/intro_proj', index_proj.viewData);
+app.get('/index_proj', index_proj.viewData);
 app.get('/feature_one', feature_one.main);
 
 app.get('/search_results', search_results.main);
