@@ -11,8 +11,8 @@ var handlebars = require('express3-handlebars');
 
 var index_proj = require('./routes/index_proj');
 var feature_one = require('./routes/feature_one');
-//var signup = require('./routes/signup');
-
+var signup = require('./routes/signup');
+var pro_land = require('./routes/pro_land');
 
 var search_results = require('./routes/search_results');
 var saved_profiles = require('./routes/saved_profiles');
@@ -52,7 +52,8 @@ app.get('/', index_proj.viewData);
 app.get('/feature_one', feature_one.main);
 
 app.get('/search_results', search_results.main);
-//app.get('/signup', signup.main);
+app.get('/signup', signup.main);
+app.get('/pro_land', pro_land.main)
 
 app.get('/saved_profiles', saved_profiles.main);
 app.get('/saved_trips', saved_trips.main);
