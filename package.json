@@ -11,7 +11,7 @@
 
   "private": true,
   "scripts": {
-    "start": "node app.js"
+    "start": "node app_proj.js"
   },
   "dependencies": {
     "express": "3.x",
