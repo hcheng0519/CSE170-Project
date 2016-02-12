@@ -17,7 +17,12 @@ var pro_land = require('./routes/pro_land');
 var search_results = require('./routes/search_results');
 var saved_profiles = require('./routes/saved_profiles');
 var saved_trips = require('./routes/saved_trips');
+<<<<<<< HEAD
+//var edit_tripdiary = require('./routes/edit_tripdiary');
+var travel_diary = require('./routes/travel_diary');
+=======
 var edit_tripdiary = require('./routes/edit_tripdiary');
+>>>>>>> c13f7c6e2f43c7c017a1b90073a757fd6b614a2f
 
 
 // Example route
@@ -49,6 +54,7 @@ if ('development' == app.get('env')) {
 
 // Add routes here
 app.get('/', index_proj.viewData);
+app.get('/intro_proj', index_proj.viewData);
 app.get('/feature_one', feature_one.main);
 
 app.get('/search_results', search_results.main);
@@ -57,7 +63,12 @@ app.get('/pro_land', pro_land.main)
 
 app.get('/saved_profiles', saved_profiles.main);
 app.get('/saved_trips', saved_trips.main);
+
+app.get('/travel_diary', travel_diary.main);
+//app.get('/edit_tripdiary', edit_tripdiary.main);
+
 app.get('/edit_tripdiary', edit_tripdiary.main);
+
 
 //app.get('/project/:id', project.projectInfo);
 // Example route
