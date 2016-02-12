@@ -17,12 +17,12 @@ var pro_land = require('./routes/pro_land');
 var search_results = require('./routes/search_results');
 var saved_profiles = require('./routes/saved_profiles');
 var saved_trips = require('./routes/saved_trips');
-<<<<<<< HEAD
+
 //var edit_tripdiary = require('./routes/edit_tripdiary');
 var travel_diary = require('./routes/travel_diary');
-=======
+
 var edit_tripdiary = require('./routes/edit_tripdiary');
->>>>>>> c13f7c6e2f43c7c017a1b90073a757fd6b614a2f
+
 
 
 // Example route
