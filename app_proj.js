@@ -11,7 +11,10 @@ var handlebars = require('express3-handlebars');
 
 var index_proj = require('./routes/index_proj');
 var feature_one = require('./routes/feature_one');
-var signup = require('./routes/signup');
+//var signup = require('./routes/signup');
+
+var search_results = require('./routes/search_results');
+
 //var saved_profiles = require('./routes/saved_profiles');
 //var index_proj2 = require('./routes/index_proj2');
 //var project = require('./routes/project');
@@ -45,7 +48,8 @@ if ('development' == app.get('env')) {
 // Add routes here
 app.get('/', index_proj.viewData);
 app.get('/feature_one', feature_one.main);
-app.get('/signup', signup.main);
+app.get('/search_results', search_results.main);
+//app.get('/signup', signup.main);
 //app.get('/saved_profiles', saved_profiles.main)
 //app.get('/project/:id', project.projectInfo);
 // Example route
