@@ -1,5 +1,5 @@
 {
-	"saved_profiles": [
+	"saved_profiles1": [
 		{
 			"name": "Anjelica Thang",
 			"imgPath": "img/profile_pic/girl1.jpg"
@@ -11,8 +11,11 @@
 		{
 			"name": "Helen Cheng",
 			"imgPath": "img/profile_pic/girl1.jpg"
-		},
-		{
+		}
+	],
+
+	"saved_profiles2": [
+		{	
 			"name": "Joel Krejmas",
 			"imgPath": "img/profile_pic/girl1.jpg"
 		},
@@ -23,7 +26,10 @@
 		{
 			"name": "Ron Weasley",
 			"imgPath": "img/profile_pic/girl1.jpg"
-		},
+		}
+	],
+
+	"saved_profiles3": [
 		{
 			"name": "Hermione Granger",
 			"imgPath": "img/profile_pic/girl1.jpg"
