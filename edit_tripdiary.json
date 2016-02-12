@@ -1,0 +1,10 @@
+{
+	"travel_diary": [
+		{
+			"trip name": "My EuroTrip",
+			"date": "May 1st, 2014",
+			"imgPath": "img/profile_pic/girl1.jpg",
+			"day":"1"
+		}
+	]
+}
