@@ -23,6 +23,9 @@ var travel_diary = require('./routes/travel_diary');
 
 var edit_tripdiary = require('./routes/edit_tripdiary');
 
+var signupB = require('./routes/signupB');
+var create_account = require('./routes/create_account');
+var signout = require('./routes/signout');
 
 
 // Example route
@@ -69,7 +72,9 @@ app_proj.get('/travel_diary', travel_diary.main);
 
 app_proj.get('/edit_tripdiary', edit_tripdiary.main);
 
-
+app_proj.get('/signupB', signupB.main);
+app_proj.get('/create_account', create_account.main);
+app_proj.get('/signout', signout.main);
 //app_proj.get('/project/:id', project.projectInfo);
 // Example route
 // app_proj.get('/users', user.list);
