@@ -26,7 +26,9 @@ var edit_tripdiary = require('./routes/edit_tripdiary');
 var signupB = require('./routes/signupB');
 var create_account = require('./routes/create_account');
 var signout = require('./routes/signout');
-
+var forgot_pw = require('./routes/forgot_pw');
+var confirm_account = require('./routes/confirm_account');
+var support_help = require('./routes/support_help');
 
 // Example route
 // var user = require('./routes/user');
@@ -75,6 +77,9 @@ app_proj.get('/edit_tripdiary', edit_tripdiary.main);
 app_proj.get('/signupB', signupB.main);
 app_proj.get('/create_account', create_account.main);
 app_proj.get('/signout', signout.main);
+app_proj.get('/confirm_account', confirm_account.main);
+app_proj.get('/forgot_pw', forgot_pw.main);
+app_proj.get('/support_help', support_help.main);
 //app_proj.get('/project/:id', project.projectInfo);
 // Example route
 // app_proj.get('/users', user.list);
