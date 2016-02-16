@@ -29,6 +29,7 @@ var signout = require('./routes/signout');
 var forgot_pw = require('./routes/forgot_pw');
 var confirm_account = require('./routes/confirm_account');
 var support_help = require('./routes/support_help');
+var login = require('./routes/login');
 
 // Example route
 // var user = require('./routes/user');
@@ -83,6 +84,9 @@ app_proj.get('/support_help', support_help.main);
 //app_proj.get('/project/:id', project.projectInfo);
 // Example route
 // app_proj.get('/users', user.list);
+
+app_proj.post('/login', login.view);
+app_proj.post('/pro_land', pro_land.checkLogin);
 
 http.createServer(app_proj).listen(app_proj.get('port'), function(){
   console.log('Express app_proj listening on port ' + app_proj.get('port'));
