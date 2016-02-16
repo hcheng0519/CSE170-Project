@@ -49,6 +49,11 @@
                 <h4>Look up a destination and get inspiration for your own trip!</h4>
                 <div class="form-group">
                     <input type="text" class="form-control" id="destination" placeholder="Destination" name="destination">
+                    <script>
+                        function search() {
+                            var userInput = document.getElementById("destination").value;
+                        }
+                    </script>
                     <a href="/search_results">
                 </div>
                 <input type="search" id="submitBtn" class="btn btn-default" value="search">
