@@ -1,0 +1,17 @@
+{
+  "users" :[
+      {
+        "email" : "hello@world.com",
+        "password" : "sad"
+      },
+      {
+        "email" : "hello1@world.com",
+        "password" : "sad"
+      },
+      {
+        "email" : "hello2@world.com",
+        "password" : "sad"
+      }
+    ],
+    "current": []
+}
