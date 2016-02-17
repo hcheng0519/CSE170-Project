@@ -5,7 +5,21 @@ exports.main = function(req, res){
 };
 
 exports.search = function(req, res){
-	for(var i = 0; i < results.["search_results"].length; i++) {
-		//if(results[i].city == )
+	if(req != null) {
+		var city = req.body.city;
+		var flag = false;
+
+		for(var i = 0; i < results["search_results"].length; i++) {
+			if(results["search_results"][i].city == city) {
+				flag = true;
+			}
+		}
+
+		if(flag) {
+			res.render('search_results');
+		}
+		else {
+			res.render('index_proj');
+		}
 	}
 }
