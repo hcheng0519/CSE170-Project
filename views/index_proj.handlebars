@@ -33,7 +33,7 @@
 
     <!-- Using partials to reduce the amount of code.
         Look at the files with these names to find the code for it -->
-    {{> menu_bar}} 
+    {{> menu_bar_index}} 
 
     <!-- Header -->
     <header id="top" class="header">
@@ -153,11 +153,11 @@
                     <hr class="small">
                     <div class="row">
                         {{#each feature}}
-                        <div class="col-md-6">
+                        <div class="col-md-6" id="feature_diary">
                             <div class="portfolio-item">
-                                <a href="/feature_one">
+                                <a href="/travel_diary">
                                     <span class="caption">
-                                        <h2>{{name}}</h2>
+                                        <h2>{{person}}</h2>
                                         <p class="desc">{{description}}</p>
                                     </span>
                                     <img class="img-portfolio img-responsive" src="img/portfolio-1.jpg">
@@ -202,7 +202,7 @@
                     <!-- /.row (nested) -->
 
                     <a href="/search_results" class="btn btn-dark btn-lg">View More Trips</a>
-                    <a href="/saved_trips" class="btn btn-dark btn-lg">View Saved Trips</a>
+                    <!-- <a href="/saved_trips" class="btn btn-dark btn-lg">View Saved Trips</a> -->
                     <a href="/signupB" class="btn btn-dark btn-lg" id="sign">Sign Up</a>
                 </div>
                 <!-- /.col-lg-10 -->
