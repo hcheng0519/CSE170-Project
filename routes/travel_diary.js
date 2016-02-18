@@ -8,7 +8,7 @@ exports.choose_diary = function(req, res){
 	if(req != null){
 		var person = req.body.person;
 		var description = "";
-		var
+		
 	}
 
 	for(var i = 0; i < data["diaries"].length; i++){
