@@ -95,6 +95,7 @@ app_proj.get('/terms_conditions', terms.main);
 
 app_proj.post('/login', login.view);
 app_proj.post('/pro_land', pro_land.checkLogin);
+app_proj.post('/search_results', search_results.checkSearch);
 
 // addPicture.js
 app_proj.get('/addPicture', addPicture.addPicture)

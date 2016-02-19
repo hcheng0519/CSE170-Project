@@ -1,0 +1,44 @@
+{
+	"places" : [
+		{
+			"img": "",
+			"name": "Balboa Park Day Trip",
+			"city": "San Diego",
+			"description": ""
+		},
+		{
+			"img": "",
+			"name": "Katie's Potato Chip Rock Hike",
+			"city": "San Diego",
+			"description": ""
+		},
+		{
+			"img": "",
+			"name": "Downtown San Diego Bar Crawl",
+			"city": "San Diego", 
+			"description": ""
+
+		},
+		{
+			"img": "",
+			"name": "La Jolla Weekend Surf Trip",
+			"city": "San Diego",
+			"description": ""
+
+		},
+		{
+			"img": "",
+			"name": "Anza Borrego Camping Trip 2015",
+			"city": "San Diego",
+			"description": ""
+
+		},
+		{
+			"img": "",
+			"name": "Balboa Park Day Trip",
+			"city": "San Diego",
+			"description": ""
+
+		}
+	]
+}

@@ -1,13 +1,4 @@
 {
-	"search_results" : [
-		{
-			"city" : "paris"
-		},
-		{
-			"city" : "san diego"
-		}
-	],
-
 	"places" : [
 		{ 	
 		    "img": "https://i.ytimg.com/vi/O4W4X_UBRkg/maxresdefault.jpg",
@@ -38,49 +29,6 @@
 		    "name": "The Smith's Honeymoon in Paris",
 		    "city": "Paris",
 		    "description": "Who could ask for a better honeymoon destination than Paris, The City of Love? We happen to agree with Audrey Hepburn when she said, Paris is always a good idea. Its iconic monuments like the Eiffel Tower, museums like the Louvre and landmarks like the Notre Dame Cathedral are certain to dazzle visitors. However, even more spectacular than the sights is Paris' rich culture found in its charming boulevards, cozy cafes and bustling bistros. This grand city boasts an indescribable je ne sais quoi that is sure to inspire an incredibly romantic honeymoon."
-		},
-		{
-			"img": "",
-			"name": "Katie's Potato Chip Rock Hike",
-			"city": "San Diego",
-			"description": ""
-		},
-		{
-			"img": "",
-			"name": "Downtown San Diego Bar Crawl",
-			"city": "San Diego", 
-			"description": ""
-
-		},
-		{
-			"img": "",
-			"name": "La Jolla Weekend Surf Trip",
-			"city": "San Diego",
-			"description": ""
-
-		},
-		{
-			"img": "",
-			"name": "Anza Borrego Camping Trip 2015",
-			"city": "San Diego",
-			"description": ""
-
-		},
-		{
-			"img": "",
-			"name": "Balboa Park Day Trip",
-			"city": "San Diego",
-			"description": ""
-
-		}
-	],
-
-	"san diego" : [
-		{
-			"img": "",
-			"name": "Balboa Park Day Trip",
-			"city": "San Diego",
-			"description": ""
 		}
 	]
 }
