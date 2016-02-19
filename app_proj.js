@@ -13,6 +13,8 @@ var index_proj = require('./routes/index_proj');
 var feature_one = require('./routes/feature_one');
 var signup = require('./routes/signup');
 var pro_land = require('./routes/pro_land');
+// user added pictures
+var addPicture = require('./routes/addPicture');
 
 var search_results = require('./routes/search_results');
 var saved_profiles = require('./routes/saved_profiles');
@@ -87,6 +89,9 @@ app_proj.get('/support_help', support_help.main);
 
 app_proj.post('/login', login.view);
 app_proj.post('/pro_land', pro_land.checkLogin);
+
+// addPicture.js
+app_proj.get('/addPicture', addPicture.addPicture)
 
 http.createServer(app_proj).listen(app_proj.get('port'), function(){
   console.log('Express app_proj listening on port ' + app_proj.get('port'));
