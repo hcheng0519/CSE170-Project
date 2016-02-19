@@ -13,5 +13,11 @@
         "password" : "sad"
       }
     ],
+    "msg" :[
+      {
+        "errormsg" : "The account you entered doesn't exist."
+      }
+    ],
+
     "current": []
 }
