@@ -15,6 +15,7 @@
 
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.4.4.min.js"></script>
 <script type="text/javascript" src="login.js"></script>
+<script type="text/javascript" src="../routes/pro_land.js"></script>
 </head>
 <body>
     <!-- Using partials to reduce the amount of code.
@@ -25,21 +26,24 @@
   <div class="heading">
     <h2>Sign in</h2>
     <form action="/pro_land" method="post">
+      {{#each msg}}
+      <h4>{{errormsg}}</h4>
+      {{/each}}
       <div class="input-group input-group-lg">
         <span class="input-group-addon"><i class="fa fa-user"></i></span>
-        <input type="text" class="form-control email" placeholder="Email" name="email" />
+        <input type="text" class="form-control email" placeholder="Email" id="email" name="email" />
       </div>
 
       <div class="input-group input-group-lg">
         <span class="input-group-addon"><i class="fa fa-lock"></i></span>
-        <input type="password" class="form-control pass" placeholder="Password" name="password" />
+        <input type="password" class="form-control password" placeholder="Password" name="password" id="password"/>
       </div>
         
         <!--<button type="submit" class="float">Login</button>-->
         <div class="row">
               <div class="col-xs-4 col-md-4">
                 <!-- <a href="/pro_land" class="btn btn-dark btn-lg" id="sign">Login</a> -->
-                 <button name="signin_btn" type="submit">Sign in</button>
+                 <button name="signin_btn" type="submit" onclick="validateForm(this.form)">Sign in</button>
               </div>
 
               <div class="col-xs-4 col-md-4">
@@ -51,6 +55,30 @@
               </div>
         </div>
     </form>
+
+    <script language="javascript">
+      function validateForm(form)
+      {
+        var x = form.email.value;
+        var y = form.password.value;
+        if(x==null || x=="")
+        {
+          alert("Please fill in your email.");
+          return false;
+        }
+        else if(x=="" && y==null)
+        {
+          alert("Please enter an appropriate email and password.");
+          return false;
+        }
+        else if(y=="")
+        {
+          alert("Please enter a password");
+          return false;
+        }
+      }
+    </script>
+
  	</div>
 </div>
 
