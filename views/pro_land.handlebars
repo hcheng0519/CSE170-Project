@@ -10,11 +10,9 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link href="../css/bootstrap.min.css" rel="stylesheet">
-		<!--<link href="assets/aerialmeat/css/main.css">-->
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link href="/css/toAddPics.css" rel="stylesheet"> 
 		<link rel="stylesheet" href="../assets/css/main.css" />
 		<link rel="stylesheet" href="../css/stylish-portfolio.css" />
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 	</head>
 	<body class="loading">
 		<!-- Navigation -->
@@ -48,13 +46,10 @@
         </div>
     </nav> -->
 
-    {{> menu_bar}}
-<!-- //////////////////////////////////////////////////////////////////////- -->
-<div id="wrapper">
+    	{{> menu_bar}}
+		<div id="wrapper">
 			<div id="bg"></div>
-			<!-- <div id="overlay"></div> -->
 			<div id="main">
-
 				<!-- Header -->
 					<!-- <header id="header">
 						<h1>Adam Jensen</h1>
@@ -68,15 +63,8 @@
 						</nav>
 					</header> -->
 			</div>
-</div>
-
-<!-- //////////////////////////////////////////////////////////////////////- -->
-		<!-- Header 
-			<section id="header">
-					<h1>Overflow</h1>
-					<p>By HTML5 UP</p>
-			</section>-->
-		<!-- Banner -->
+		</div>
+		
 		<section id="moveit">
 			<h1>Welcome back!</h1>
 			
@@ -179,8 +167,39 @@
 				</ul>
 			</div>
 		</section> -->
-	</section>
 
+  <div class="container">
+  <!--<a href="/index_proj">HOME</a>-->
+	<h1>My Profile</h1>
+	{{#each addPicture}}
+	<div class="addPicture">
+		<img class="img-responsive img-rounded" src="{{imagesrc}}">
+		<a href="#" id="clickr">
+			<h3>{{pictitle}}</h3>
+		</a>
+		<p>{{description}}</p>
+	</div>
+	{{/each}}
+	<div class="form-group">
+			<form action="upload.php" method="post" enctype="multipart/form-data">
+    			<label for="imagesrc">Select Image for Upload</label>
+    			<input type="file" name="imagesrc" id="imagesrc">
+			</form>
+		</div>
+	<form id="addImageForm" role="form" method="get" action="/addPicture">
+		<h3>Add an Image</h3>
+	    <div class="form-group">
+	      <label for="pictitle">Title:</label>
+	      <input type="text" class="form-control" id="pictitle" placeholder="Title" name="pictitle">
+	    </div>
+	    <div class="form-group">
+	      <label for="description">Description:</label>
+	      <input type="text" class="form-control" id="description" placeholder="Description" name="description">
+	    </div>
+	    <input type="submit" id="submitBtn" class="btn btn-default" value="Add the Image"></input>
+	</form>
+  <div>
+	</section>
 <!-- 	<footer id="footer">
 		<h1>Adam Jensen</h1>
 		<nav>
@@ -265,7 +284,8 @@
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://code.jquery.com/jquery.js"></script>
 <!-- Include all compiled plugins (blelow), or include individual files as needed -->
-<script src="js/bootstrap.min.js"></script>
-
+<script src="/js/jquery-1.11.0.js"></script>
+<script src="/js/bootstrap.js"></script>
+<script src="/routes/addPicture.js"></script>
 	</body>
 </html>
