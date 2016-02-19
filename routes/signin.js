@@ -1,3 +1,3 @@
 exports.main = function(req, res){
-  	res.render('signupB')
+  	res.render('signin')
 }

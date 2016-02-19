@@ -15,16 +15,16 @@
 	],
 
 	"feature": [
-		{ 	"name": "Helen Cheng",
+		{ 	"person": "Helen Cheng",
 		    "description": "Exploring San Francisco!"
 		},
-		{ 	"name": "Steven Duong",
+		{ 	"person": "Steven Duong",
 		    "description": "My Month in Canada"
 		},	
-		{ 	"name": "Anjelica Thang",
+		{ 	"person": "Anjelica Thang",
 		    "description": "A Day in Paris~"
 		},
-		{ 	"name": "Carl Fredricksen",
+		{ 	"person": "Carl Fredricksen",
 		    "description": "Adventure is out there"
 		}
 	]

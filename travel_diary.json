@@ -1,0 +1,16 @@
+{
+	"diaries": [
+		{ 	"person": "Helen Cheng",
+		    "description": "Exploring San Francisco!"
+		},
+		{ 	"person": "Steven Duong",
+		    "description": "My Month in Canada"
+		},	
+		{ 	"person": "Anjelica Thang",
+		    "description": "A Day in Paris~"
+		},
+		{ 	"person": "Carl Fredricksen",
+		    "description": "Adventure is out there"
+		}
+	]
+}
