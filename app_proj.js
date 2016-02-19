@@ -76,9 +76,8 @@ app_proj.get('/saved_profiles', saved_profiles.main);
 app_proj.get('/saved_trips', saved_trips.main);
 
 app_proj.get('/travel_diary', travel_diary.main);
-//app_proj.get('/edit_tripdiary', edit_tripdiary.main);
 
-app_proj.get('/edit_tripdiary', edit_tripdiary.main);
+app_proj.get('/edit_tripdiary', edit_tripdiary.edit_tripdiary);
 
 app_proj.get('/signin', signin.main);
 app_proj.get('/create_account', create_account.main);
