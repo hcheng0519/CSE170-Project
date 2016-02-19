@@ -13,7 +13,7 @@
         "password" : "sad"
       }
     ],
-<<<<<<< HEAD
+
     "current": [],
 
     "addPicture": [
@@ -32,8 +32,8 @@
       "description": "Really surprised me to find something like this in the country side!",
       "imagesrc": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Teremok_fast_food_restaurant_Saint_Petersburg.jpg"
     }
-  ]
-=======
+  ],
+
     "msg" :[
       {
         "errormsg" : "The account you entered doesn't exist."
@@ -41,5 +41,4 @@
     ],
 
     "current": []
->>>>>>> e281f5d5b94dcce4437cf6418f0dee20fdb493ee
 }
