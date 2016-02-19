@@ -27,6 +27,6 @@ exports.view = function(req, res){
            }
 
   data["users"].push(newEntry);
-  res.render('signupB');
+  res.render('signin');
   }
 };

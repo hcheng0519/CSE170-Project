@@ -30,6 +30,9 @@ var forgot_pw = require('./routes/forgot_pw');
 var confirm_account = require('./routes/confirm_account');
 var support_help = require('./routes/support_help');
 var login = require('./routes/login');
+var user_homepage = require('./routes/user_homepage');
+var support_help_user = require('./routes/support_help');
+var terms = require('./routes/terms_conditions');
 
 // Example route
 // var user = require('./routes/user');
@@ -81,6 +84,9 @@ app_proj.get('/signout', signout.main);
 app_proj.get('/confirm_account', confirm_account.main);
 app_proj.get('/forgot_pw', forgot_pw.main);
 app_proj.get('/support_help', support_help.main);
+app_proj.get('/user_homepage', user_homepage.main);
+app_proj.get('/support_help_user', support_help.main_user);
+app_proj.get('/terms_conditions', terms.main);
 //app_proj.get('/project/:id', project.projectInfo);
 // Example route
 // app_proj.get('/users', user.list);
