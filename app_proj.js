@@ -35,6 +35,8 @@ var login = require('./routes/login');
 var user_homepage = require('./routes/user_homepage');
 var support_help_user = require('./routes/support_help');
 var terms = require('./routes/terms_conditions');
+var public_profile = require('./routes/public_profile');
+var user_public_profile = require('./routes/user_public_profile');
 
 // Example route
 // var user = require('./routes/user');
@@ -88,6 +90,8 @@ app_proj.get('/support_help', support_help.main);
 app_proj.get('/user_homepage', user_homepage.main);
 app_proj.get('/support_help_user', support_help.main_user);
 app_proj.get('/terms_conditions', terms.main);
+app_proj.get('/public_profile', public_profile.main);
+app_proj.get('/user_public_profile', user_public_profile.main);
 //app_proj.get('/project/:id', project.projectInfo);
 // Example route
 // app_proj.get('/users', user.list);

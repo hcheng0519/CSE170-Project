@@ -1,0 +1,104 @@
+<html>
+    <head>
+        <title>My Profile</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="../assets/css/main.css" />
+        <link rel="stylesheet" href="../css/stylish-portfolio.css" />
+        <link rel="stylesheet" type="text/css" href="css/isotope.css" media="screen" />
+        <link rel="stylesheet" href="../css/public_profile.css" />
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="css/feature_newadditions.css" />
+        
+
+    </head>
+
+<body>
+    {{> menu_bar_index}}
+
+    <section>
+        <img class="profile_img" id="profile_img" src="../img/camera.jpg"></img>
+    </section>
+
+    <h2>Super Simple Bootstrap Responsive Timeline</h2>
+    <nav id="filter" class="col-md-12 text-center">
+        <ul>
+            <li><a href="/travel_diary" class="current btn-theme btn-small" data-filter="*">All Images</a></li>
+            <li><a href="/travel_diary" class="btn-theme btn-small" data-filter=".webdesign">Travel Diary</a></li>
+            <li><a href="/travel_diary" class="btn-theme btn-small" data-filter=".photography">Future Travels</a></li>
+            <li><a href="/travel_diary" class="btn-theme btn-small" data-filter=".print">Misc</a></li>
+        </ul>
+    </nav>
+
+    <br>
+    <br>
+
+    <ul class="timeline">
+        {{#each profile_data}}
+        <li class="{{invert}}">
+            <div class="timeline-badge">
+              <a><i class="{{circle_position}}" id=""></i></a>
+            </div>
+            <div class="timeline-panel">
+                <div class="timeline-heading">
+                    <h4>{{head}}</h4>
+                </div>
+                <div class="timeline-body">
+                    <p>{{description}}</p>
+                </div>
+                <div class="timeline-footer">
+                    <p class="text-right">{{date}}</p>
+                </div>
+            </div>
+        </li>
+        {{/each}}
+        
+        <li class="clearfix no-float"></li>
+    </ul>
+
+    <p class="footer">Icons by <a href="http://fortawesome.github.io/Font-Awesome/">FontAwesome 4.1 Icons</a>.<br />
+      Created by <a href="http://jenniferperrin.com">Jennifer Perrin</a>
+    </p>
+
+    <!-- jQuery -->
+    <script src="../js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../js/bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script>
+    // Closes the sidebar menu
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Scrolls to the selected menu item on the page
+    $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+    </script>
+
+</body>
+
+</html>
