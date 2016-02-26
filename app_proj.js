@@ -94,6 +94,9 @@ app_proj.get('/public_profile', public_profile.main);
 app_proj.get('/user_public_profile', user_public_profile.main);
 app_proj.get('/travel_diary_brittany', travel_diary.brit_main);
 app_proj.get('/travel_diary_wine', travel_diary.wine_main);
+app_proj.get('/travel_diary_signedin', travel_diary.brit_signedin);
+app_proj.get('/travel_diary_signedin', travel_diary.wine_signedin);
+
 //app_proj.get('/project/:id', project.projectInfo);
 // Example route
 // app_proj.get('/users', user.list);
@@ -101,6 +104,7 @@ app_proj.get('/travel_diary_wine', travel_diary.wine_main);
 app_proj.post('/login', login.view);
 app_proj.post('/pro_land', pro_land.checkLogin);
 app_proj.post('/search_results', search_results.checkSearch);
+app_proj.post('/search', search_results.checkSearch);
 
 // addPicture.js
 app_proj.get('/addPicture', addPicture.addPicture)

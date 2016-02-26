@@ -21,27 +21,12 @@
 
 	    {{> menu_bar_signedin}}
 	<!-- //////////////////////////////////////////////////////////////////////- -->
-		<div id="wrapper">
-			<div id=""></div>
-				<div id="">
-				<!-- Header -->
-					<!-- <header id="header">
-						<h1>Adam Jensen</h1>
-						<p>Security Chief &nbsp;&bull;&nbsp; Family Man &nbsp;&bull;&nbsp;</p>
-						<nav>
-							<ul>
-								<li><a href="/saved_trips" class="icon fa-twitter"><span class="label">Saved Trips</span></a></li>
-								<li><a href="/saved_profiles" class="icon fa-facebook"><span class="label">Saved Profiles</span></a></li>
-								<li><a href="/edit_tripdiary" class="icon fa-dribbble"><span class="label">Edit Trip Diary</span></a></li>
-							</ul>
-						</nav>
-					</header> -->
-				</div>
-			</div>
 
-		</div>
 		
 		<section id="moveit">
+			<br>
+			<br>
+			<br>
 			<h1>Welcome To Your Profile!</h1>
 			
 			<div id="home-buttons">
@@ -172,63 +157,66 @@
 		</div>-->
 
 
-		<script>
-			window.onload = function() { document.body.className = ''; }
-			window.ontouchmove = function() { return false; }
-			window.onorientationchange = function() { document.body.scrollTop = 0; }
-		</script>
-		<!-- jQuery -->
-		<script src="../js/jquery.js"></script>
+	    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
 
-		<!-- Bootstrap Core JavaScript -->
-		<script src="../js/bootstrap.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
 
-		<script src="../js/signup.js"></script>
-		<!-- Scripts -->
-		<script src="../assets/js/jquery.min.js"></script>
-		<script src="../assets/js/jquery.scrolly.min.js"></script>
-		<script src="../assets/js/jquery.poptrox.min.js"></script>
-		<script src="../assets/js/skel.min.js"></script>
-		<script src="../assets/js/util.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script>
+    // Closes the sidebar menu
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
 
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
 
-		<!-- Custom Theme JavaScript -->
-		<script>
-		// Closes the sidebar menu
-		$("#menu-close").click(function(e) {
-		    e.preventDefault();
-		    $("#sidebar-wrapper").toggleClass("active");
-		});
+    // Scrolls to the selected menu item on the page
+    $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
 
-		// Opens the sidebar menu
-		$("#menu-toggle").click(function(e) {
-		    e.preventDefault();
-		    $("#sidebar-wrapper").toggleClass("active");
-		});
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+    </script>
 
-		// Scrolls to the selected menu item on the page
-		$(function() {
-		    $('a[href*=#]:not([href=#])').click(function() {
-		        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+<script>
+    $(document).ready(function () {
 
-		            var target = $(this.hash);
-		            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-		            if (target.length) {
-		                $('html,body').animate({
-		                    scrollTop: target.offset().top
-		                }, 1000);
-		                return false;
-		            }
-		        }
-		    });
-		});
-		</script>
+        // you want to enable the pointer events only on click;
 
-		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-		<script src="https://code.jquery.com/jquery.js"></script>
-		<!-- Include all compiled plugins (blelow), or include individual files as needed -->
-		<script src="/js/jquery-1.11.0.js"></script>
-		<script src="/js/bootstrap.js"></script>
-		<script src="/routes/addPicture.js"></script>
+        $('#map_canvas').addClass('scrolloff'); // set the pointer events to none on doc ready
+        $('#contact').on('click', function () {
+            $('#map_canvas').removeClass('scrolloff'); // set the pointer events true on click
+        });
+
+        // you want to disable pointer events when the mouse leave the canvas area;
+
+        $("#map_canvas").mouseleave(function () {
+            $('#map_canvas').addClass('scrolloff'); // set the pointer events to none when mouse leaves the map area
+        });
+    });
+</script>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://code.jquery.com/jquery.js"></script>
+<!-- Include all compiled plugins (blelow), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+
 	</body>
 </html>
