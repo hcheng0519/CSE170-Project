@@ -36,35 +36,21 @@
     {{> menu_bar_signedin}} 
 
     <!-- Header -->
-    <header id="top" class="header">
-        <div class="text-vertical-center">
-            <h1>Wish Trip</h1>
-            <h3>Trip planning made easy &amp; fun</h3>
-            <br>
-            <hr>
+    <div class="text-vertical-center">
+        <h1>Wish Trip</h1>
 
-            <div class="searchBar">
-                <form id="searchDestination" role="form" method="get" action="/search">
-                <h4>Look up a destination and get inspiration for your own trip!</h4>
-                <div class="form-group">
-                    <input type="text" class="form-control" id="destination" placeholder="Destination" name="city">
-<!--                     <script language="javascript">
-                        var city = searchBar.city.value;
-                        var paris = "Paris";
-                        var san_diego = "San Diego";
-                        if(city == paris || city == san_diego) {
-                            <a href="/search_results">
-                        }
-                    </script> -->
-                    <a href="/search_results">
-                </div>
-                <input type="search" id="submitBtn" class="btn btn-default" value="search">
-                </input>
-                </form>
+        <div class="searchBar">
+            <form id="searchDestination" role="form" method="get" action="/search">
+            <div class="form-group">
+                <input type="text" class="form-control" id="destination" placeholder="Destination" name="city">
+                <a href="/search_results">
             </div>
-
+            <input type="search" id="submitBtn" class="btn btn-default" value="search">
+            </input>
+            </form>
         </div>
-    </header>
+
+    </div>
 
     <!-- Portfolio -->
     <section id="portfolio" class="portfolio">
@@ -87,44 +73,12 @@
                             </div>
                         </div>
                         {{/each}}
-<!--                         <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <a href="feature_two.html">
-                                    <span class="caption">
-                                        <h2>Helen's San Francisco Trip</h2>
-                                        <p class="desc">Traveled from here to there. Read more!</p>
-                                    </span>
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-2.jpg">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <a href="feature_three.html">
-                                    <span class="caption">
-                                        <h2>Steven's Canada Trip</h2>
-                                        <p class="desc">Traveled from here to there. Read more!</p>
-                                    </span>
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-3.jpg">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <a href="feature_four.html">
-                                    <span class="caption">
-                                        <h2>Joel's New York Trip</h2>
-                                        <p class="desc">Traveled from here to there. Read more!</p>
-                                    </span>
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-4.jpg">
-                                </a>
-                            </div>
-                        </div> -->
+
                     </div>
                     <!-- /.row (nested) -->
 
                     <a href="/search_results" class="btn btn-dark btn-lg">View More Trips</a>
-                    <!-- <a href="/saved_trips" class="btn btn-dark btn-lg">View Saved Trips</a> -->
+                    <a href="/saved_trips" class="btn btn-dark btn-lg">View Saved Trips</a>
                 </div>
                 <!-- /.col-lg-10 -->
             </div>
@@ -203,23 +157,6 @@
     });
     </script>
 
-<script>
-    $(document).ready(function () {
-
-        // you want to enable the pointer events only on click;
-
-        $('#map_canvas').addClass('scrolloff'); // set the pointer events to none on doc ready
-        $('#contact').on('click', function () {
-            $('#map_canvas').removeClass('scrolloff'); // set the pointer events true on click
-        });
-
-        // you want to disable pointer events when the mouse leave the canvas area;
-
-        $("#map_canvas").mouseleave(function () {
-            $('#map_canvas').addClass('scrolloff'); // set the pointer events to none when mouse leaves the map area
-        });
-    });
-</script>
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://code.jquery.com/jquery.js"></script>

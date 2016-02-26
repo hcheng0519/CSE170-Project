@@ -2,6 +2,8 @@ var results = require('../search_results.json');
 var paris_rsult = require('../paris.json');
 var sd_rsult = require('../sd.json');
 
+
+
 exports.main = function(req, res){
 	res.render('search_results', results);
 };
@@ -28,11 +30,11 @@ exports.checkSearch = function(req, res){
 		// 	res.render('index_proj');
 		// }
 
-		if(results["search_results"][0].city == city){
+		if(results["search_results"][0].city == city || city == "Paris"){
 			res.render('search_results', paris_rsult);
 		}
 
-		else if (results["search_results"][1].city == city) {
+		else if (results["search_results"][1].city == city || city == "San Diego") {
 			res.render('search_results', sd_rsult);
 		}
 
