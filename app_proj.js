@@ -38,6 +38,16 @@ var terms = require('./routes/terms_conditions');
 var public_profile = require('./routes/public_profile');
 var user_public_profile = require('./routes/user_public_profile');
 
+var AnjelicaThang = require('./routes/saved_profiles_routes/AnjelicaThang.js');
+var StevenDuong = require('./routes/saved_profiles_routes/StevenDuong.js');
+var HelenCheng = require('./routes/saved_profiles_routes/HelenCheng.js');
+var JoelKrejmas = require('./routes/saved_profiles_routes/JoelKrejmas');
+var HarryPotter = require('./routes/saved_profiles_routes/HarryPotter');
+var RonWeasley = require('./routes/saved_profiles_routes/RonWeasley');
+var HermioneGranger = require('./routes/saved_profiles_routes/HermioneGranger');
+var SeverusSnape = require('./routes/saved_profiles_routes/SeverusSnape');
+var AlbusDumbledore = require('./routes/saved_profiles_routes/AlbusDumbledore');
+
 // Example route
 // var user = require('./routes/user');
 //var homepage_data = require('./homepage_data.json');
@@ -101,7 +111,17 @@ app_proj.post('/pro_land', pro_land.checkLogin);
 app_proj.post('/search_results', search_results.checkSearch);
 
 // addPicture.js
-app_proj.get('/addPicture', addPicture.addPicture)
+app_proj.get('/addPicture', addPicture.addPicture);
+
+app_proj.get('/AnjelicaThang', AnjelicaThang.main);
+app_proj.get('/StevenDuong', StevenDuong.main);
+app_proj.get('/HelenCheng', HelenCheng.main);
+app_proj.get('/JoelKrejmas', JoelKrejmas.main);
+app_proj.get('/HarryPotter', HarryPotter.main);
+app_proj.get('/RonWeasley', RonWeasley.main);
+app_proj.get('/HermioneGranger', HermioneGranger.main);
+app_proj.get('/SeverusSnape', SeverusSnape.main);
+app_proj.get('/AlbusDumbledore', AlbusDumbledore.main);
 
 http.createServer(app_proj).listen(app_proj.get('port'), function(){
   console.log('Express app_proj listening on port ' + app_proj.get('port'));
