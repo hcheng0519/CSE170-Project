@@ -102,6 +102,8 @@ app_proj.get('/support_help_user', support_help.main_user);
 app_proj.get('/terms_conditions', terms.main);
 app_proj.get('/public_profile', public_profile.main);
 app_proj.get('/user_public_profile', user_public_profile.main);
+app_proj.get('/travel_diary_brittany', travel_diary.brit_main);
+app_proj.get('/travel_diary_wine', travel_diary.wine_main);
 //app_proj.get('/project/:id', project.projectInfo);
 // Example route
 // app_proj.get('/users', user.list);
