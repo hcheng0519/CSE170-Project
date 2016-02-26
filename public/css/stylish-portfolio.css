@@ -339,6 +339,15 @@ hr.small {
         height: 75%;
     }
 }*/
+#moveit h1 {
+    font-size: 2em;
+}
+
+#home-buttons a {
+    position: relative;
+    padding: 5px;
+    margin-top: 50%;
+}
 
 #sign {
     margin: 0 auto;
